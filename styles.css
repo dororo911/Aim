@@ -12,6 +12,40 @@ body {
 
 h1 { margin-bottom: 10px; }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.brand h1 {
+  margin-bottom: 0;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.35));
+}
+
+.brand-logo .ring,
+.brand-logo .mark {
+  fill: none;
+  stroke: #38bdf8;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.brand-logo .inner {
+  stroke: #f43f5e;
+}
+
+.brand-logo .core {
+  fill: #f43f5e;
+  stroke: #f43f5e;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -135,6 +169,15 @@ body.game-active #game {
     height: auto;
     min-height: 100vh;
     padding: 16px 0;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
   }
 
   #game {
