@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aim Trainer - 3 Levels</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="menu" class="menu">
+    <h1>🎯 Aim Trainer</h1>
+
+    <div class="setup">
+      <label for="levelSelect">Level:</label>
+      <select id="levelSelect">
+        <option value="0">Level 1 - Warm Up</option>
+        <option value="1">Level 2 - Quick Aim</option>
+        <option value="2">Level 3 - Snap Shot</option>
+      </select>
+
+      <label for="timeSelect">Time:</label>
+      <select id="timeSelect">
+        <option value="30">30s</option>
+        <option value="45" selected>45s</option>
+        <option value="60">60s</option>
+        <option value="90">90s</option>
+      </select>
+
+      <label for="soundToggle" class="sound-toggle">
+        <input id="soundToggle" type="checkbox" checked />
+        Enable Sound
+      </label>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" type="button">Start Game</button>
+    </div>
+
+    <div id="status">Press Start to begin.</div>
+  </div>
+
+  <div id="hud" aria-live="polite">
+    <span id="time">45</span>s
+  </div>
+
+  <div id="game"></div>
+
+</body>
+</html>
